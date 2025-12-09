@@ -1,0 +1,12 @@
+{
+  "name": "@my-scope/toolkit",
+  "version": "0.1.0",
+  "exports": "./src/mod.ts",
+  "tasks": {
+    "test": "deno test --allow-none"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.window"]
+  }
+}
