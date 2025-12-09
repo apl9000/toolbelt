@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.210.0/assert/mod.ts";
+import { assertEquals, assert } from "https://deno.land/std@0.210.0/assert/mod.ts";
 import { slugify, sleep, chunk } from "./mod.ts";
 
 Deno.test("mod - exports slugify function", () => {
@@ -11,7 +11,7 @@ Deno.test("mod - exports sleep function", async () => {
   const start = Date.now();
   await sleep(50);
   const elapsed = Date.now() - start;
-  assertEquals(elapsed >= 40, true);
+  assert(elapsed >= 40);
 });
 
 Deno.test("mod - exports chunk function", () => {
