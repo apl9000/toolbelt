@@ -24,5 +24,5 @@ Deno.test("sleep - with zero milliseconds", async () => {
 
 Deno.test("sleep - returns a promise", () => {
   const result = sleep(10);
-  assertEquals(result instanceof Promise, true);
+  assert(result instanceof Promise);
 });
